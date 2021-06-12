@@ -30,6 +30,13 @@ a {
     color: var(--colour-4);
 }
 
+nav {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
 .header {
     display: block;
 
@@ -63,12 +70,11 @@ a {
 
 }
 
-nav {
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-
+.name{
+    text-align: center;
+    max-width: 25%;
 }
+
 
 .center {
     display: block;
