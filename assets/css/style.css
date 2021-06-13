@@ -108,7 +108,7 @@ nav {
 .main-rows {
     display: flex;
     flex-wrap: wrap;
-    justify-content: stretch;
+    justify-content: center;
     padding: auto;
     margin: 40px;
     position: relative;
@@ -123,7 +123,7 @@ nav {
 }
 .main-columns{
     flex: 1 0 25%;
-    justify-content: stretch;
+    justify-content: center;
 }
 
 /* lhs is the heading for each section */
@@ -141,6 +141,9 @@ nav {
 }
 
 /* columns and cards relate to the portfolio work */
+#feature{
+    flex: 0.5 2 40%;
+}
 
 .columns-cards{
     flex: 1 0 20%;
@@ -169,7 +172,7 @@ position: relative; /* moves up the DOM preventing over divs overlapping*/
 .card-img{
     display: block;
     min-height: 80px;
-    justify-content: stretch;  
+    justify-content: center;  
 }
 .rows-cards{
     display: flex;
@@ -210,6 +213,9 @@ Moves section heading to be above
         right: 0;
         left: 0;
         font-weight: bold;
+        justify-content: stretch;
+        width: 95%;
+
    
     }
     
@@ -222,10 +228,14 @@ Moves section heading to be above
     }
     .main-columns{
         flex: 1 0 95%;
-        justify-content: stretch;
+        justify-content: center;
     }
     .lhs-column{
         margin-bottom: 10px;
+        justify-content: center;
+        text-align: center;
+         width: 95%;
+         padding:auto;
     }
 
 }
