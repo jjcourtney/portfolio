@@ -4,8 +4,6 @@
     --colour-3: rgb(132, 136, 197);
     --colour-4: rgb(3, 5, 43);
     font-family: Montserrat, Roboto, sans-serif;
-    --border-gradient: linear-gradient(325deg, var(--colour-2), var(--colour-1), var(--colour-1), var(--colour-2));
-
 
 }
 
@@ -15,9 +13,9 @@
     font-weight: bold;
 }
 
+/* elements - START */
+
 body{
-    /* background-image: var(--border-gradient);
-    background-size:contain; */
     background-color: var(--colour-2);
 }
 
@@ -36,9 +34,43 @@ nav {
     margin-right: auto;
 
 }
+/* elements - END */
+/* class - START */
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+}
+
 
 .header {
     display: block;
+
+}
+
+.logo {
+    max-width: 10%;
+    margin-bottom: 15px;
+
+}
+
+.name{
+    text-align: center;
+    max-width: 25%;
+}
+
+
+
+
+/* links are in lrelation to navigation thorugout the page */
+.link-list{
+    color: var(--colour-4);
+    box-shadow: 5px 5px 5px var(--colour-3);
+    margin: 10px;
+    padding: 5px 15px 5px 15px;
+    font-size: 1.5em;
 
 }
 
@@ -60,38 +92,6 @@ nav {
 
 
 }
-.contact img{
-    max-height: 50px;
-}
-
-.logo {
-    max-width: 10%;
-    margin-bottom: 15px;
-
-}
-
-.name{
-    text-align: center;
-    max-width: 25%;
-}
-
-
-.center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 40%;
-}
-
-
-.link-list{
-    color: var(--colour-4);
-    box-shadow: 5px 5px 5px var(--colour-3);
-    margin: 10px;
-    padding: 5px 15px 5px 15px;
-    font-size: 1.5em;
-
-}
 
 .link-list:hover{
     color: var(--colour-3);
@@ -104,6 +104,7 @@ nav {
     box-shadow: -5px -5px 5px var(--colour-4);
 }
 
+/* main relates to the main body pf the page */ 
 .main-rows {
     display: flex;
     flex-wrap: wrap;
@@ -125,17 +126,21 @@ nav {
     justify-content: stretch;
 }
 
+/* lhs is the heading for each section */
 .lhs-column{
     max-width: 25%;
     padding-right: 15px;
     margin-right: 15px;
 }
 
+
 .shadow{
     box-shadow: 5px 5px 5px var(--colour-3);
     border-radius: 15px;
     background-image: linear-gradient(25deg, var(--colour-2), var(--colour-1), var(--colour-1), var(--colour-2));
 }
+
+/* columns and cards relate to the portfolio work */
 
 .columns-cards{
     flex: 1 0 20%;
@@ -148,10 +153,10 @@ nav {
 }
 
 .columns-cards img:hover{
-transform: scale(2.3);
+transform: scale(1.8);
 filter: none;
-z-index: 99;
-position: relative;
+z-index: 99; /* also have to set position: relative; */
+position: relative; /* moves up the DOM preventing over divs overlapping*/
 }
 
 .card-text{
@@ -172,6 +177,8 @@ position: relative;
     
 }
 
+
+/* Contacts sections */
 .contact-img{
     display: inline;
     max-height: 30px;
@@ -189,6 +196,13 @@ position: relative;
 color: var(--colour-4);
 }
 
+
+/* class - END */
+
+/* for viewport > 901px 
+Links resize, removes contacts details giving only images
+Moves section heading to be above
+*/
 @media screen and (max-width: 900px) {
     .main-heading{
         font-size: 100%;
