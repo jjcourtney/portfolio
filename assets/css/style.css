@@ -16,7 +16,8 @@
 /* elements - START */
 
 body{
-    background-color: var(--colour-2);
+   /*background-color: var(--colour-2);*/
+    background-image: linear-gradient(130deg, var(--colour-3), var(--colour-2), var(--colour-1), var(--colour-2));
 }
 
 li{
@@ -136,12 +137,13 @@ nav {
     max-width: 25%;
     padding-right: 15px;
     margin-right: 15px;
+    
 }
 
 
 .shadow{
     box-shadow: 5px 5px 5px var(--colour-3);
-    border-radius: 15px;
+    border-radius: 5px;
     background-image: linear-gradient(25deg, var(--colour-2), var(--colour-1), var(--colour-1), var(--colour-2));
 }
 
@@ -211,6 +213,14 @@ color: var(--colour-4);
 Links resize, removes contacts details giving only images
 Moves section heading to be above
 */
+.dlPDF{
+    max-width: 50px;
+    z-index: 99;
+    position:fixed;
+    bottom: 10px;
+    right: 10px;
+    
+}
 @media screen and (max-width: 900px) {
     .main-heading{
         font-size: 100%;
