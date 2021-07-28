@@ -1,9 +1,9 @@
 :root {
-    --colour-4: rgb(255, 255, 255);
-    --colour-1: rgb(172, 172, 172);
+    --colour-1: rgb(255, 255, 255);
+    --colour-2: rgb(172, 172, 172);
     --colour-3: rgb(132, 136, 197);
-    --colour-2: rgb(3, 5, 43);
-    font-family: 'Space Grotesk', sans-serif;
+    --colour-4: rgb(3, 5, 43);
+    font-family: Montserrat, Roboto, sans-serif;
 
 }
 
@@ -13,20 +13,11 @@
     font-weight: bold;
 }
 
-.logo {
-    font-family: 'Lobster', cursive;
-
-    text-align: center;
-    font-size: xx-large;
-    color: var(--colour-2);
-    min-width: 85%;
-
-}
 /* elements - START */
 
 body{
    /*background-color: var(--colour-2);*/
-    background-image: linear-gradient(130deg, rgb(255, 255, 255), var(--colour-1));
+    background-image: linear-gradient(130deg, var(--colour-3), var(--colour-2), var(--colour-1), var(--colour-2));
 }
 
 li{
@@ -46,7 +37,9 @@ nav {
 }
 /* elements - END */
 
-
+#logo {
+    border-radius: 50%;
+}
 /* class - START */
 
 .center {
@@ -80,6 +73,7 @@ nav {
 /* links are in lrelation to navigation thorugout the page */
 .link-list{
     color: var(--colour-4);
+    box-shadow: 5px 5px 5px var(--colour-3);
     margin: 10px;
     padding: 5px 15px 5px 15px;
     font-size: 1.5em;
@@ -148,11 +142,9 @@ nav {
 
 
 .shadow{
-    border-top: dodgerblue 1px solid;
-    border-left: rgb(30, 255, 180) 1px solid;
-    color: var(--colour-2);
-    background-color: var(--colour-4);
-    
+    box-shadow: 5px 5px 5px var(--colour-3);
+    border-radius: 5px;
+    background-image: linear-gradient(25deg, var(--colour-2), var(--colour-1), var(--colour-1), var(--colour-2));
 }
 
 /* columns and cards relate to the portfolio work */
