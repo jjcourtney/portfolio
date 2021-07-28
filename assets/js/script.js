@@ -1,12 +1,12 @@
 class PortfolioLink {
-    constructor(url, image, languages, isFeature){
-        this.url = url;
-        this.image = image;
-        this.languages = languages;
-        this.isFeature = isFeature;
+    constructor(projectObj){
+
+        const {url, image, languages, isFeature} = projectObj;
+        Object.assign(this, {url, image, languages, isFeature});
     }
     get elements() {
         this.createSection()
+        
         return this.sectionEl;
     }
 
@@ -18,12 +18,24 @@ class PortfolioLink {
             this.sectionEl.attr("id", "feature");
         }
     }
-    createFigure
+    createDivs() {
+        this.imgDiv = $("<div>")
+        .addClass("card-img")
+        .attr
+        this.sectionEl.append()
+    }
 
 }
 
-let test = new PortfolioLink("asd.com", "/image.png", "HTML", true);
-let test2 = new PortfolioLink("asd.com", "/image.png", "HTML JavaScript", false);
-$("#div-test").append(test.elements);
-$("#div-test").append(test2.elements);
-console.log(test.elements)
+const objArr = [{name: "test", url: "some.com", image: "/image.png", languages : "HTML", isFeature: true},
+                {name: "test2", url: "thing.com", image: "/image.png", languages : "HTML", isFeature: false}]
+
+const testDiv = $("#div-test");
+
+objArr.forEach((linkObject, i) =>{
+    let someName = linkObject.name
+    this[someName] =  new PortfolioLink(objArr[i]);
+})
+
+testDiv.append(test.elements);
+testDiv.append(test2.elements);
