@@ -14,18 +14,25 @@ const objArr = [
                 languages : "JavaScript/HTML/CSS", 
                 isFeature: false
             },{
-                name: "test3",
-                url: "thing.com",
+                name: "periodic-table",
+                url: "https://periodic.realalgorithm.co.uk/",
                 image: "./assets/images/periodic.png", 
                 repoURL : "https://github.com/jjcourtney/PeriodicTable", 
                 languages : "HTML/PHP/CSS", 
                 isFeature: false
             },{
-                name: "test4", 
-                url: "thing.com", 
-                image: "./assets/images/periodic.png", 
-                repoURL : "https://github.com/jjcourtney/PeriodicTable", 
-                languages : "HTML/PHP/CSS", 
+                name: "html-quiz", 
+                url: "https://jjcourtney.github.io/Frontend-Developer-Quiz/", 
+                image: "./assets/images/html-quiz.png", 
+                repoURL : "https://github.com/jjcourtney/Frontend-Developer-Quiz", 
+                languages : "JavaScript/jQuery/HTML/CSS", 
+                isFeature: false
+            },{
+                name: "daily-planner", 
+                url: "https://jjcourtney.github.io/daily-planner/", 
+                image: "./assets/images/daily-planner.png", 
+                repoURL : "https://github.com/jjcourtney/daily-planner", 
+                languages : "JavaScript/jQuery/HTML/CSS", 
                 isFeature: false
             }]
 
