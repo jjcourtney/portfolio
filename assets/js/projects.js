@@ -1,4 +1,4 @@
-const objArr = [
+const projectObjsArr = [
             {
                 name: "infoCraft", 
                 url: "https://jjcourtney.github.io/PDJ-InfoCraft/", 
