@@ -34,5 +34,13 @@ const objArr = [
                 repoURL : "https://github.com/jjcourtney/daily-planner", 
                 languages : "JavaScript/jQuery/HTML/CSS", 
                 isFeature: false
+            },{
+                name: "password-gen", 
+                url: "https://jjcourtney.github.io/Password-Generator/", 
+                image: "./assets/images/password-gen.png", 
+                repoURL : "https://github.com/jjcourtney/Password-Generator", 
+                languages : "JavaScript/jQuery/HTML/CSS", 
+                isFeature: false
             }]
 
+            
