@@ -42,17 +42,6 @@ class PortfolioLink {
 
 }
 
-const objArr = [{name: "test", url: "some.com", image: "./assets/images/periodic.png", repoURL : "https://github.com/jjcourtney/PeriodicTable", languages : "HTML", isFeature: true},
-                {name: "test2", url: "thing.com", image: "./assets/images/periodic.png", repoURL : "https://github.com/jjcourtney/PeriodicTable", languages : "HTML/PHP/CSS", isFeature: false},
-                {name: "test3", url: "thing.com", image: "./assets/images/periodic.png", repoURL : "https://github.com/jjcourtney/PeriodicTable", languages : "HTML/PHP/CSS", isFeature: false},
-                {name: "test4", url: "thing.com", image: "./assets/images/periodic.png", repoURL : "https://github.com/jjcourtney/PeriodicTable", languages : "HTML/PHP/CSS", isFeature: false},
-                {name: "test5", url: "thing.com", image: "./assets/images/periodic.png", repoURL : "https://github.com/jjcourtney/PeriodicTable", languages : "HTML/PHP/CSS", isFeature: false},
-                {name: "test6", url: "thing.com", image: "./assets/images/periodic.png", repoURL : "https://github.com/jjcourtney/PeriodicTable", languages : "HTML/PHP/CSS", isFeature: false},
-                {name: "test7", url: "thing.com", image: "./assets/images/periodic.png", repoURL : "https://github.com/jjcourtney/PeriodicTable", languages : "HTML/PHP/CSS", isFeature: false},
-                {name: "test8", url: "thing.com", image: "./assets/images/periodic.png", repoURL : "https://github.com/jjcourtney/PeriodicTable", languages : "HTML/PHP/CSS", isFeature: false},
-                {name: "test9", url: "thing.com", image: "./assets/images/periodic.png", repoURL : "https://github.com/jjcourtney/PeriodicTable", languages : "HTML/PHP/CSS", isFeature: false},
-                {name: "test10", url: "thing.com", image: "./assets/images/periodic.png", repoURL : "https://github.com/jjcourtney/PeriodicTable", languages : "HTML/PHP/CSS", isFeature: false}]
-
 const testDiv = $("#rows-cards");
 
 objArr.forEach((linkObject, i) =>{
