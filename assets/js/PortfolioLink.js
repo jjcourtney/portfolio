@@ -21,7 +21,7 @@ class PortfolioLink {
         this.imgDiv = $("<div>")
         .addClass("mb-4 relative")
         .append($(`<a href="${this.url}" target="blank">
-                    <img src="${this.image}" class="filter blur-sm hover:filter can-remove-blur md:h-56 " id="${this.name}">
+                    <img src="${this.image}" class="filter blur-sm hover:filter can-remove-blur md:h-56 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110" id="${this.name}">
                     </a>`))
         this.langDiv = $(`<div class="text-xl text-center">${this.languages}</div>`);
         this.gitHubDiv = $(`
@@ -36,7 +36,7 @@ class PortfolioLink {
         this.sectionEl.append(this.imgDiv);
         this.sectionEl.append(this.langDiv);
 
-
+        
         
     }
 
