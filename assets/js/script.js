@@ -8,9 +8,20 @@ projectObjsArr.forEach((linkObject, i) =>{
 })
 
 $(".can-remove-blur").hover(event => {
-    thisElementsID = event.target.id;
+    const thisElementsID = event.target.id;
     $(`#${thisElementsID}`).removeClass("blur-sm");
 }, event =>{
-    thisElementsID = event.target.id;
+    const thisElementsID = event.target.id;
     $(`#${thisElementsID}`).addClass("blur-sm");
 });
+
+$('[data-main-language="true"]').hover(event => {
+    const thisElementsID = event.target.id;
+    const thisLanguage = $(`#${thisElementsID}`).data("language")
+    $(`[data-language="${thisLanguage}"]`).addClass("text-indigo-400 cursor-pointer");
+}, event =>{
+    const thisElementsID = event.target.id;
+    const thisLanguage = $(`#${thisElementsID}`).data("language")
+    $(`[data-language="${thisLanguage}"]`).removeClass("text-indigo-400 cursor-pointer");
+});
+

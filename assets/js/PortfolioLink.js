@@ -23,7 +23,12 @@ class PortfolioLink {
         .append($(`<a href="${this.url}" target="blank">
                     <img src="${this.image}" class="filter blur-sm hover:filter can-remove-blur md:h-56 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110" id="${this.name}">
                     </a>`))
-        this.langDiv = $(`<div class="text-xl text-center">${this.languages}</div>`);
+
+        this.langDiv = $(`<div class="text-xl text-center"></div>`);
+
+        this.languages.forEach(language => {
+                this.langDiv.append($(`<span data-language="${language}">`).text(`${language} `));
+        });
         this.gitHubDiv = $(`
                             <div class="absolute bottom-0 right-0">
                                 <a href="${this.repoURL}" target="blank">
