@@ -1,10 +1,7 @@
-
-const rowCards = $("#rows-cards");
-const languageListEl= $("#language-list")
-
-
-
 function displayLanguages() {
+
+    const languageListEl= $("#language-list")
+
     languages.forEach((language) =>{
         
         this[language] =  new Language(language);
@@ -23,6 +20,8 @@ function displayLanguages() {
 }
 
 function displayProjects() {
+
+    const rowCards = $("#rows-cards");
 
     projectObjsArr.forEach((linkObject, i) =>{
         let aName = linkObject.name
