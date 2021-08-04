@@ -32,7 +32,7 @@ class PortfolioLink {
         this.gitHubDiv = $(`
                             <div class="absolute bottom-0 right-0">
                                 <a href="${this.repoURL}" target="blank">
-                                    <img src="./assets/images/GitHub_Logo.png" class="w-20 hover:bg-indigo-100" alt="GitHub Logo" />
+                                    <img src="./assets/images/GitHub_Logo.png" class="w-36 hover:bg-indigo-100" alt="GitHub Logo" />
                                 </a>
                             </div>`);
 
