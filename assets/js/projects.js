@@ -43,4 +43,4 @@ const projectObjsArr = [
                 isFeature: false
             }]
 
-const languages = ["HTML", "CSS", "JavaScript", "PHP", "Python", "Java", "jQuery", "Node", "Tailwind"];            
+const languages = ["HTML", "CSS", "JavaScript", "PHP", "Python", "Java", "jQuery", "Node", "Tailwind", "Jest"];            
